@@ -1,0 +1,246 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+  #body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right,rgba(7, 46, 114, 0.897),rgba(126, 157, 204, 0.24));
+    }
+
+  
+.header{
+  
+   height: 100vh;
+   background-image: linear-gradient(to right,rgba(7, 46, 114, 0.897),rgba(126, 157, 204, 0.24)),url(../images/bgimg.jpg);
+   background-size: cover;
+   background-position:top;
+   
+}
+
+.navigation__nav{
+  position: fixed;
+  
+    }
+ul {
+   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color: white;
+  }
+  .pro{
+    position: relative;
+    display: block;
+    height:24%;
+    margin-top: 5px;
+  }
+  .profilelinks{
+      display: inline-block;
+      text-decoration: none;
+      padding-left: 5%;
+      padding-top: 5%;
+      color: black;
+    }
+    #profilelinks-a{
+      margin-top: 10%; 
+    }
+    .header__text-box{
+      
+      padding-top: 10%;
+      padding-left:10%;
+    }
+    .heading-primary{
+      animation-name: moveright;
+      animation-duration: 5s;
+    }
+      .heading-primary--main{
+        font-weight: 600;
+        font-size: 4rem;
+      }
+      .heading-primary--sub{
+        font-weight: 400;
+      }
+      #resume{
+        margin-left: 13%;
+        margin-top: 8%;
+        background-color:rgb(192, 16, 16);
+        height: 30px;
+        width:180px;
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 100px;
+      }
+      #resume:hover{
+        background-color:rgb(7, 9, 131);
+      }
+      #resume a{
+        text-decoration: none;
+        color: rgb(218, 195, 195);
+        font-weight:300;
+      }
+      .projects-common{
+       background-color: bisque;
+       display: inline-block;
+       margin-left: 5%;
+       margin-top: 2%;
+       height: 70vh;
+       width: 25%;
+       border-radius: 20px;
+      }
+      .projects-common:hover{
+       background-color: rgb(135, 168, 206);
+       transform: translate(0, -5px);
+      }
+      .imgprop{
+        position: relative;
+        display: block;
+        height:40%;
+        width:90%;
+        padding-left: 5%;
+        padding-top: 5%;
+        
+
+      }
+      .bar{
+        float: left;
+        position: relative;
+       margin-left: 10%;
+        width:40%;
+        margin-top:3%;
+      }
+      
+      .bar h2{
+        text-align: left;
+        
+      }
+      .line{
+        height:20px;
+        min-width:70%;
+        margin:0 auto 10px;
+        line-height: 10px;
+        font-size: 14px;
+        color:#fff;
+        padding:0 0 0 10px;
+        position: relative;
+        text-align: right;
+        padding: 5px;
+        
+        }
+      .line:before{
+        content:'';
+        width:95%;
+        position:absolute;
+        left: 0;
+        height: 20px;
+        top:0;
+        z-index:-2;
+        background:rgb(99, 163, 182);
+      }
+      .line:after{
+        content:'';
+        background:rgb(0, 0, 0);
+        height:20px;
+        transition: 0.8s;
+        display: block;
+        width:95%;
+        animation: animate 1 4s;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        
+
+
+      }
+      .line1:after{
+        max-width: 80%;
+      }
+      .line2:after{
+        max-width: 70%;
+      }
+      .line3:after{
+        max-width: 75%;
+      }
+      .line5:after{
+        max-width: 50%;
+      } 
+      .line4:after{
+        max-width: 60%;
+      } 
+      @keyframes animate{
+        0%{
+          width:0;
+        }
+        100%{
+          width: 100%;
+        }
+      }
+      .contact-no{
+        position: relative;
+        display: block;
+        margin-top: 5%;
+        margin-left: 5%;
+        height:50px;
+        width:500px;
+      }
+      .details{
+       height: 45px;
+       width: 45px;
+       float: left;
+      }
+      .text-p{
+        position: relative;
+        padding-left: 15%;
+        padding-top: 3%;
+        font-weight: 700;
+      }
+      .contact-h1{
+        padding-top:5%;
+        text-align: center;
+      }
+      .inner_div{
+        height: 30px;
+        width: 50px;
+        background-color: rgb(206, 114, 114);
+      }
+      .para{
+        padding: 20px 10px;
+      }
+
+      @keyframes moveright{
+        0%{
+          opacity: 0; 
+          transform:translateX(100px);
+        }
+        80%{
+
+        }
+        100%{
+          opacity: 1;
+          transform: translate(0);
+        }
+      }
